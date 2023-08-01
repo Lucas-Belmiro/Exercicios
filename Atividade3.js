@@ -17,7 +17,7 @@ while (validateYear == false) {
 
   if (yearBirthday >= 1922 && yearBirthday <= 2021) {
     let result = 2022 - yearBirthday;
-    window.alert(`O seu nome é ${name}. Em 2022, a sua idade será ${result}`)
+    window.alert(`O seu nome é ${name}. Em 2022, a sua idade será ${result}`);
     validateYear = true;
   }
 }
