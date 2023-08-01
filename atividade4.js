@@ -22,7 +22,7 @@ let electionsOn = true;
 
 while (electionsOn == true) {
   let vote = parseInt(
-    window.prompt("Digite o número do seu candidato ou 0 para nulo")
+    window.prompt("Digite o número do seu candidato ou 0 para branco")
   );
 
   if (vote === listCandidates.candidato_X.voteNumber) {
