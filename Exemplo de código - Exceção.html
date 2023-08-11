@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Exceções</h1>
+    <p>Digite um número entre 5 e 10</p>
+    <input id="valor" type="text" />
+    <button type="button" onclick="verificar()">Testar</button>
+    <p id="msg"></p>
+    <p id="msgFinal"></p>
+    <script src="atividade7.js"></script>
+  </body>
+
+  <script>
+    function verificar() {
+      try {
+        let x = document.getElementById("valor").value;
+        if (x == "") throw new TypeError("campo Vazio");
+        if (isNaN(x)) throw new TypeError("Não é um número válido");
+        if (x > 10) throw new RangeError("alto demais");
+        if (x < 5) throw new RangeError("baixo demais");
+        document.getElementById("msg").innerHTML = "Número aceito";
+      } catch (err) {
+        document.getElementById("msg").innerHTML = "erro: " + err + ".";
+      } finally {
+        document.getElementById("msgFinal").innerHTML =
+          "Obrigado pela preferência";
+      }
+    }
+  </script>
+</html>
