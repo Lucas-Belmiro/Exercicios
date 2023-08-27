@@ -24,6 +24,6 @@ while (
 if (anoDeNascimento >= 1922 && anoDeNascimento <= 2021) {
   let idadeAtual = 2022 - anoDeNascimento;
 
-  alert(idadeAtual);
-  document.getElementById("printNome").innerHTML = nome;
+  alert(`A idade atual é: ${idadeAtual}`);
+  document.getElementById("printNome").innerHTML = `O nome é ${nome}`;
 }
