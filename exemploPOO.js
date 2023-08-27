@@ -1,10 +1,10 @@
 class Animals {
-  constructor(name) {
+  constructor (name) {
     this.name = name;
   }
 
-  speak() {
-    console.log("some noise");
+  speak () {
+    console.log('some noise');
   }
 }
 
@@ -13,7 +13,7 @@ class Dog extends Animals {
     super(name);
   }
 
-  speak() {
+  speak () {
     console.log("au au");
   }
 }
