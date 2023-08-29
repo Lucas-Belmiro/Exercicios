@@ -1,0 +1,53 @@
+/* Reset de estilos */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.point {
+    width: 30%;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.point img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.point h2 {
+    margin-bottom: 1rem;
+}
+
+.point p{
+    line-height: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #F5F5F5;
+    border-top: 1px solid #ddd;
+}
