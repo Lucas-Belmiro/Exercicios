@@ -1,0 +1,11 @@
+NPM install dentro da pasta 
+
+&
+
+Adicionar os seguintes arquivos no .env:
+
+PORT=
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
